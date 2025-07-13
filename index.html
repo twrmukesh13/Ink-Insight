@@ -45,25 +45,76 @@
 
     <!-- Work Section -->
     <section id="work" class="mb-16 scroll-mt-20">
-      <h2 class="text-3xl font-bold mb-6">📝 Featured Work</h2>
-      <div class="space-y-6">
-        <div class="p-6 bg-gray-50 border rounded-xl">
-          <h3 class="text-xl font-semibold">API Reference for FinTech SaaS Product</h3>
-          <p class="text-gray-700">Designed and maintained RESTful API documentation using Swagger and Postman. Focused on making it developer-friendly and searchable.</p>
-        </div>
+  <h2 class="text-3xl font-bold mb-6">📝 Featured Work</h2>
 
-        <div class="p-6 bg-gray-50 border rounded-xl">
-          <h3 class="text-xl font-semibold">User Manual for Enterprise Cloud Platform</h3>
-          <p class="text-gray-700">Created 120+ pages of structured content using MadCap Flare, following DITA principles and Microsoft Style Guide.</p>
-        </div>
+  <!-- Filter Buttons -->
+  <div class="flex flex-wrap gap-4 mb-8">
+    <button onclick="filterWork('all')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-sm rounded">All</button>
+    <button onclick="filterWork('api')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-sm rounded">API Docs</button>
+    <button onclick="filterWork('manual')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-sm rounded">User Manuals</button>
+    <button onclick="filterWork('training')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-sm rounded">Training</button>
+    <button onclick="filterWork('marketing')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-sm rounded">Marketing Content</button>
+  </div>
 
-        <div class="p-6 bg-gray-50 border rounded-xl">
-          <h3 class="text-xl font-semibold">Help Center for Mobile App</h3>
-          <p class="text-gray-700">Developed multilingual help center articles in collaboration with product and UX teams. Published on Zendesk.</p>
-        </div>
-      </div>
-      <a href="#skills" class="mt-6 inline-block text-blue-700 hover:underline">See my skillset ↓</a>
-    </section>
+  <div id="workItems" class="grid gap-6 md:grid-cols-2">
+    <div class="p-6 bg-gray-50 border rounded-xl work-item api">
+      <img src="https://via.placeholder.com/600x200?text=API+Docs" alt="API Reference" class="mb-3 rounded">
+      <h3 class="text-xl font-semibold">API Reference for FinTech SaaS Product</h3>
+      <p class="text-gray-700">Designed and maintained RESTful API documentation using Swagger and Postman. Focused on making it developer-friendly and searchable.</p>
+    </div>
+
+    <div class="p-6 bg-gray-50 border rounded-xl work-item manual">
+      <img src="https://via.placeholder.com/600x200?text=User+Manual" alt="User Manual" class="mb-3 rounded">
+      <h3 class="text-xl font-semibold">User Manual for Enterprise Cloud Platform</h3>
+      <p class="text-gray-700">Created 120+ pages of structured content using MadCap Flare, following DITA principles and Microsoft Style Guide.</p>
+    </div>
+
+    <div class="p-6 bg-gray-50 border rounded-xl work-item manual">
+      <img src="https://via.placeholder.com/600x200?text=Help+Center" alt="Help Center" class="mb-3 rounded">
+      <h3 class="text-xl font-semibold">Help Center for Mobile App</h3>
+      <p class="text-gray-700">Developed multilingual help center articles in collaboration with product and UX teams. Published on Zendesk.</p>
+    </div>
+
+    <div class="p-6 bg-gray-50 border rounded-xl work-item api">
+      <img src="https://via.placeholder.com/600x200?text=Wiki+Docs" alt="DevOps Wiki" class="mb-3 rounded">
+      <h3 class="text-xl font-semibold">Internal Wiki for DevOps Team</h3>
+      <p class="text-gray-700">Built and managed internal documentation for deployment processes, CI/CD pipelines, and infrastructure setup using Markdown in GitLab Wiki.</p>
+    </div>
+
+    <div class="p-6 bg-gray-50 border rounded-xl work-item manual">
+      <img src="https://via.placeholder.com/600x200?text=Onboarding" alt="CRM Onboarding" class="mb-3 rounded">
+      <h3 class="text-xl font-semibold">Onboarding Guide for CRM Tool</h3>
+      <p class="text-gray-700">Wrote step-by-step onboarding and quick-start guides to help sales and support teams quickly adopt the in-house CRM system.</p>
+    </div>
+
+    <div class="p-6 bg-gray-50 border rounded-xl work-item marketing">
+      <img src="https://via.placeholder.com/600x200?text=Marketing" alt="Marketing Content" class="mb-3 rounded">
+      <h3 class="text-xl font-semibold">Digital Marketing Content for EdTech Brand</h3>
+      <p class="text-gray-700">Crafted SEO-optimized landing pages, email campaigns, and product descriptions tailored to learner personas and industry segments.</p>
+    </div>
+
+    <div class="p-6 bg-gray-50 border rounded-xl work-item training">
+      <img src="https://via.placeholder.com/600x200?text=Training+Manual" alt="Training Manual" class="mb-3 rounded">
+      <h3 class="text-xl font-semibold">Training Manual for Cloud Migration</h3>
+      <p class="text-gray-700">Developed a detailed training manual and slide decks for IT teams migrating legacy systems to a cloud-native environment.</p>
+    </div>
+  </div>
+
+  <script>
+    function filterWork(type) {
+      const items = document.querySelectorAll('.work-item');
+      items.forEach(item => {
+        if (type === 'all' || item.classList.contains(type)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+  <a href="#skills" class="mt-6 inline-block text-blue-700 hover:underline">See my skillset ↓</a>
+</section>
 
     <!-- Skills Section -->
     <section id="skills" class="mb-16 scroll-mt-20">
