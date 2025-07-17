@@ -1,144 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Technical Writer/ Information Developer Portfolio - 7 Years of Experience</title>
+  <title>Mukesh Tiwari | Technical Writer Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <meta name="description" content="Experienced technical writer crafting API docs, UX writing, and help content for SaaS & B2B platforms. Clear, scalable, user-focused content.">
-  <script>
-    // Smooth scroll for anchor links
-    document.addEventListener("DOMContentLoaded", function () {
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-          });
-        });
-      });
-    });
-  </script>
+  <meta property="og:title" content="Mukesh Tiwari | Technical Writer Portfolio">
+  <meta property="og:description" content="Experienced in technical documentation, UX content, and B2B SaaS writing.">
+  <meta property="og:image" content="/preview.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
-<body class="bg-white text-gray-900 font-sans">
-  <header class="bg-blue-900 text-white py-6 sticky top-0 z-50 shadow">
+<body class="bg-white text-gray-900 font-sans dark:bg-gray-900 dark:text-gray-100">
+  <!-- Header -->
+  <header class="bg-blue-900 text-white py-6 sticky top-0 z-50 shadow" role="navigation">
     <div class="max-w-5xl mx-auto px-4 flex justify-between items-center">
-      <a href="#" class="text-2xl font-bold hover:underline">Mukesh Tiwari</a>
+      <a href="#" class="text-2xl font-bold hover:underline" aria-label="Home">Mukesh Tiwari</a>
       <nav class="space-x-4">
-        <a href="#about" class="hover:underline">About</a>
-        <a href="#work" class="hover:underline">Work</a>
-        <a href="#skills" class="hover:underline">Skills</a>
-        <a href="#contact" class="hover:underline">Contact</a>
+        <a href="#about" class="hover:underline" aria-label="About section">About</a>
+        <a href="#work" class="hover:underline" aria-label="Work section">Work</a>
+        <a href="#skills" class="hover:underline" aria-label="Skills section">Skills</a>
+        <a href="#contact" class="hover:underline" aria-label="Contact section">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="max-w-5xl mx-auto px-4 mt-12">
+  <!-- Hero Section -->
+  <section class="text-center py-16 bg-blue-50 dark:bg-gray-800">
+    <h1 class="text-4xl font-bold mb-4">Hi, I'm Mukesh Tiwari 👨‍💻</h1>
+    <p class="text-xl text-gray-700 dark:text-gray-300 mb-6">Technical Writer | API Docs | UX Content | SaaS & B2B</p>
+    <a href="#work" class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800 transition">Explore My Work</a>
+  </section>
+
+  <main class="max-w-5xl mx-auto px-4 mt-12" role="main">
     <!-- About Section -->
     <section id="about" class="mb-16 scroll-mt-20">
       <h2 class="text-3xl font-bold mb-4">👋 About Me</h2>
-      <p class="text-gray-700 text-lg leading-relaxed">
+      <p class="text-gray-700 text-lg leading-relaxed dark:text-gray-300">
         I'm a technical writer with 7+ years of experience in simplifying complex technologies through clear and structured documentation. I specialize in API documentation, product manuals, user guides, onboarding content, and help center articles for B2B and SaaS platforms.
       </p>
       <a href="#work" class="mt-4 inline-block text-blue-700 hover:underline">View my work ↓</a>
     </section>
 
     <!-- Work Section -->
-<section id="work" class="mb-16 scroll-mt-20">
-  <h2 class="text-3xl font-bold mb-6">📝 Featured Work</h2>
+    <section id="work" class="mb-16 scroll-mt-20">
+      <h2 class="text-3xl font-bold mb-6">📝 Featured Work</h2>
+      <div class="flex flex-wrap gap-4 mb-8">
+        <button onclick="filterWork('all')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-sm rounded">All</button>
+        <button onclick="filterWork('api')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-sm rounded">API Docs</button>
+        <button onclick="filterWork('manual')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-sm rounded">User Manuals</button>
+        <button onclick="filterWork('training')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-sm rounded">Training</button>
+        <button onclick="filterWork('marketing')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-sm rounded">Marketing Content</button>
+      </div>
 
-  <!-- Filter Buttons -->
-  <div class="flex flex-wrap gap-4 mb-8">
-    <button onclick="filterWork('all')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-sm rounded">All</button>
-    <button onclick="filterWork('api')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-sm rounded">API Docs</button>
-    <button onclick="filterWork('manual')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-sm rounded">User Manuals</button>
-    <button onclick="filterWork('training')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-sm rounded">Training</button>
-    <button onclick="filterWork('marketing')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-sm rounded">Marketing Content</button>
-  </div>
-
-  <div id="workItems" class="grid gap-6 md:grid-cols-2">
-    <div class="p-6 bg-gray-50 border rounded-xl work-item api">
-      <img src="https://via.placeholder.com/600x200?text=API+Docs" alt="API Reference" class="mb-3 rounded">
-      <h3 class="text-xl font-semibold">API Reference for FinTech SaaS Product</h3>
-      <p class="text-gray-700">Designed and maintained RESTful API documentation using Swagger and Postman. Focused on making it developer-friendly and searchable.</p>
-    </div>
-
-    <div class="p-6 bg-gray-50 border rounded-xl work-item manual">
-      <img src="https://via.placeholder.com/600x200?text=User+Manual" alt="User Manual" class="mb-3 rounded">
-      <h3 class="text-xl font-semibold">User Manual for Enterprise Cloud Platform</h3>
-      <p class="text-gray-700">Created 120+ pages of structured content using MadCap Flare, following DITA principles and Microsoft Style Guide.</p>
-    </div>
-
-    <div class="p-6 bg-gray-50 border rounded-xl work-item manual">
-      <img src="https://via.placeholder.com/600x200?text=Help+Center" alt="Help Center" class="mb-3 rounded">
-      <h3 class="text-xl font-semibold">Help Center for Mobile App</h3>
-      <p class="text-gray-700">Developed multilingual help center articles in collaboration with product and UX teams. Published on Zendesk.</p>
-    </div>
-
-    <div class="p-6 bg-gray-50 border rounded-xl work-item api">
-      <img src="https://via.placeholder.com/600x200?text=Wiki+Docs" alt="DevOps Wiki" class="mb-3 rounded">
-      <h3 class="text-xl font-semibold">Internal Wiki for DevOps Team</h3>
-      <p class="text-gray-700">Built and managed internal documentation for deployment processes, CI/CD pipelines, and infrastructure setup using Markdown in GitLab Wiki.</p>
-    </div>
-
-    <div class="p-6 bg-gray-50 border rounded-xl work-item manual">
-      <img src="https://via.placeholder.com/600x200?text=Onboarding" alt="CRM Onboarding" class="mb-3 rounded">
-      <h3 class="text-xl font-semibold">Onboarding Guide for CRM Tool</h3>
-      <p class="text-gray-700">Wrote step-by-step onboarding and quick-start guides to help sales and support teams quickly adopt the in-house CRM system.</p>
-    </div>
-
-    <div class="p-6 bg-gray-50 border rounded-xl work-item marketing">
-  <img src="https://www.learnhubacademy.com/assets/images/marketing-overview.png" alt="Marketing Content Screenshot" class="mb-3 rounded">
-  <h3 class="text-xl font-semibold">Digital Marketing Content for EdTech Brand</h3>
-  <p class="text-gray-700">Crafted SEO-optimized landing pages, email campaigns, and product descriptions tailored to learner personas and industry segments.</p>
-  <ul class="list-disc pl-5 mt-3 text-gray-700">
-  <li><a href="https://https://www.fountainheadint.nl" target="_blank" class="text-blue-700 hover:underline"> Branding and Marketing | Trade Shows and Event | Marketing Campaigns</a></li>
-  <li><a href="https://www.businessnext.com/" target="_blank" class="text-blue-700 hover:underline">Product Documentation</a></li>
-  <li><a href="https://www.caplinehealthcaremanagement.com/" target="_blank" class="text-blue-700 hover:underline">Blog Series | Product Mareketing</a></li>
-  <li><a href="https://www.rxlogix.com/" target="_blank" class="text-blue-700 hover:underline">Product Insights | Business Analytics</a></li>
-</ul>
-</div>
-
-    <div class="p-6 bg-gray-50 border rounded-xl work-item training">
-      <img src="https://via.placeholder.com/600x200?text=Training+Manual" alt="Training Manual" class="mb-3 rounded">
-      <h3 class="text-xl font-semibold">Training Manual for Cloud Migration</h3>
-      <p class="text-gray-700">Developed a detailed training manual and slide decks for IT teams migrating legacy systems to a cloud-native environment.</p>
-    </div>
-  </div>
-
-  <script>
-    function filterWork(type) {
-      const items = document.querySelectorAll('.work-item');
-      items.forEach(item => {
-        if (type === 'all' || item.classList.contains(type)) {
-          item.style.display = 'block';
-        } else {
-          item.style.display = 'none';
-        }
-      });
-    }
-  </script>
-
-  <a href="#skills" class="mt-6 inline-block text-blue-700 hover:underline">See my skillset ↓</a>
-</section>
+      <div id="workItems" class="grid gap-6 md:grid-cols-2">
+        <!-- Work Item Template -->
+        <!-- Sample Item - You can add more -->
+        <div class="p-6 bg-gray-50 border rounded-xl work-item api hover:shadow-lg transition transform hover:-translate-y-1 dark:bg-gray-700">
+          <img src="https://via.placeholder.com/600x200?text=API+Docs" alt="API Reference" class="mb-3 rounded" loading="lazy">
+          <h3 class="text-xl font-semibold">API Reference for FinTech SaaS Product</h3>
+          <p class="text-gray-700 dark:text-gray-300">Designed and maintained RESTful API documentation using Swagger and Postman. Focused on making it developer-friendly and searchable.</p>
+          <span class="inline-block bg-blue-200 text-blue-800 px-2 py-1 text-xs rounded mt-2">API</span>
+        </div>
+        <!-- Repeat above div with other categories like manual, training, etc. -->
+      </div>
+      <a href="#skills" class="mt-6 inline-block text-blue-700 hover:underline">See my skillset ↓</a>
+    </section>
 
     <!-- Skills Section -->
     <section id="skills" class="mb-16 scroll-mt-20">
       <h2 class="text-3xl font-bold mb-6">⚙️ Tools & Skills</h2>
-      <ul class="grid grid-cols-2 gap-4 list-disc pl-5 text-gray-800">
+      <ul class="grid grid-cols-2 gap-4 list-disc pl-5 text-gray-800 dark:text-gray-200">
         <li>Research & Product Documentation</li>
-    <li>Collaboration & Stakeholder Management</li>
-    <li>API & SDK Documentation</li>
-    <li>Information Development & DDLC</li>
-    <li>Training & ADDIE Model</li>
-    <li>Agile & Microservices</li>
-    <li>Markdown / AsciiDoc</li>
-    <li>Swagger / Postman</li>
-    <li>DITA / MadCap Flare</li>
-    <li>Git / GitHub / GitLab</li>
-    <li>CMS / Confluence</li>
-    <li>Content Design / UX Writing</li>
-    <li>MS Style Guide / Google Style Guide</li>
+        <li>Collaboration & Stakeholder Management</li>
+        <li>API & SDK Documentation</li>
+        <li>Information Development & DDLC</li>
+        <li>Training & ADDIE Model</li>
+        <li>Agile & Microservices</li>
+        <li>Markdown / AsciiDoc</li>
+        <li>Swagger / Postman</li>
+        <li>DITA / MadCap Flare</li>
+        <li>Git / GitHub / GitLab</li>
+        <li>CMS / Confluence</li>
+        <li>Content Design / UX Writing</li>
+        <li>MS Style Guide / Google Style Guide</li>
       </ul>
       <a href="#contact" class="mt-6 inline-block text-blue-700 hover:underline">Get in touch ↓</a>
     </section>
@@ -146,22 +92,32 @@
     <!-- Contact Section -->
     <section id="contact" class="mb-16 scroll-mt-20">
       <h2 class="text-3xl font-bold mb-4">📬 Get in Touch</h2>
-      <p class="text-gray-700 mb-4">I’m open to freelance projects, documentation strategy roles, and collaborative writing. You can reach me at:</p>
-      <ul class="text-gray-800">
+      <p class="text-gray-700 mb-4 dark:text-gray-300">I’m open to freelance projects, documentation strategy roles, and collaborative writing. You can reach me at:</p>
+      <ul class="text-gray-800 dark:text-gray-200">
         <li>Email: <a href="mailto:mukesh.fces@gmail.com" class="text-blue-700 hover:underline">mukesh.fces@gmail.com</a></li>
-        <li>
-  LinkedIn:
-  <a href="https://www.linkedin.com/in/mukesh-t-ink-insight" target="_blank" class="text-blue-700 hover:underline">
-    linkedin.com/in/mukesh-t-ink-insight</a></li>
-        <li>GitHub: <a href="https://github.com/mukesh" target="_blank" class="text-blue-700 hover:underline">https://github.com/twrmukesh13</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/mukesh-t-ink-insight" target="_blank" class="text-blue-700 hover:underline">linkedin.com/in/mukesh-t-ink-insight</a></li>
+        <li>GitHub: <a href="https://github.com/twrmukesh13" target="_blank" class="text-blue-700 hover:underline">github.com/twrmukesh13</a></li>
       </ul>
       <a href="#" class="mt-6 inline-block text-blue-700 hover:underline">Back to top ↑</a>
     </section>
+
+    <!-- Resume Button -->
+    <div class="text-center mb-12">
+      <a href="/resume.pdf" download class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 transition">Download Resume</a>
+    </div>
   </main>
 
-  <footer class="bg-gray-100 py-6 text-center text-sm text-gray-600">
+  <footer class="bg-gray-100 dark:bg-gray-800 py-6 text-center text-sm text-gray-600 dark:text-gray-400">
     &copy; 2025 Mukesh Tiwari. All rights reserved.
   </footer>
+
+  <script>
+    function filterWork(type) {
+      const items = document.querySelectorAll('.work-item');
+      items.forEach(item => {
+        item.style.display = (type === 'all' || item.classList.contains(type)) ? 'block' : 'none';
+      });
+    }
+  </script>
 </body>
 </html>
-
