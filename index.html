@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mukesh Tiwari | Informatin Architect Portfolio</title>
+  <title>Mukesh Tiwari | Technical Writer Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <meta name="description" content="Experienced technical writer crafting API docs, UX writing, and help content for SaaS & B2B platforms. Clear, scalable, user-focused content.">
-  <meta property="og:title" content="Mukesh Tiwari | Information Architect Portfolio">
+  <meta property="og:title" content="Mukesh Tiwari | Technical Writer Portfolio">
   <meta property="og:description" content="Experienced in technical documentation, UX content, and B2B SaaS writing.">
   <meta property="og:image" content="/preview.png">
   <meta property="og:type" content="website">
@@ -16,9 +16,7 @@
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
           e.preventDefault();
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-          });
+          document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
         });
       });
 
@@ -37,96 +35,111 @@
   </script>
 </head>
 <body class="bg-white text-gray-900 font-sans dark:bg-gray-900 dark:text-gray-100">
-  <header class="bg-blue-900 text-white py-6 sticky top-0 z-50 shadow" role="navigation">
-    <div class="max-w-5xl mx-auto px-4 flex justify-between items-center">
-      <a href="#" class="text-2xl font-bold hover:underline" aria-label="Home">Mukesh Tiwari</a>
-      <nav class="space-x-4">
-        <a href="#about" class="hover:underline" aria-label="About section">About</a>
-        <a href="#work" class="hover:underline" aria-label="Work section">Work</a>
-        <a href="#skills" class="hover:underline" aria-label="Skills section">Skills</a>
-        <a href="#contact" class="hover:underline" aria-label="Contact section">Contact</a>
-        <button id="themeToggle" class="ml-4 px-2 py-1 bg-gray-100 text-blue-900 dark:bg-gray-700 dark:text-white rounded text-sm hover:bg-gray-200">Toggle Theme</button>
+  <header class="bg-blue-900 text-white py-6 sticky top-0 z-50 shadow">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold hover:underline">Mukesh Tiwari</a>
+      <nav class="space-x-6 text-sm">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#work" class="hover:underline">Work</a>
+        <a href="#skills" class="hover:underline">Skills</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+        <button id="themeToggle" class="ml-4 px-2 py-1 bg-gray-100 text-blue-900 dark:bg-gray-700 dark:text-white rounded text-xs hover:bg-gray-200">Toggle Theme</button>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="text-center py-16 bg-blue-50 dark:bg-gray-800 transition duration-300">
-    <h1 class="text-4xl font-bold mb-4 animate-fade-in">Hi, I'm Mukesh Tiwari 👨‍💻</h1>
-    <p class="text-xl text-gray-700 dark:text-gray-300 mb-6">Information Developer | Technical Writer | Product | Research</p>
-    <a href="#work" class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800 transition">Explore My Work</a>
+  <section class="text-center py-24 bg-blue-50 dark:bg-gray-800 transition duration-300">
+    <h1 class="text-5xl font-extrabold mb-4 animate-fade-in">Mukesh Tiwari</h1>
+    <p class="text-xl text-gray-700 dark:text-gray-300 mb-6">Technical Writer • API Docs • UX Content • SaaS & B2B Platforms</p>
+    <p class="text-md text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">I simplify complexity through thoughtful content design. From API docs to user flows, I create scalable, impactful, and human-centered documentation.</p>
+    <a href="#work" class="bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-800 transition">Explore My Work</a>
   </section>
 
-  <main class="max-w-5xl mx-auto px-4 mt-12" role="main">
-    <!-- About Section -->
-    <section id="about" class="mb-16 scroll-mt-20 animate-slide-up">
+  <main class="max-w-6xl mx-auto px-4 mt-16">
+    <section id="about" class="mb-20 animate-slide-up">
       <h2 class="text-3xl font-bold mb-4">👋 About Me</h2>
-      <p class="text-gray-700 text-lg leading-relaxed dark:text-gray-300">
-        I'm a technical writer with 7+ years of experience in simplifying complex technologies through clear and structured documentation. I specialize in API documentation, product manuals, user guides, onboarding content, and help center articles for B2B and SaaS platforms.
+      <p class="text-gray-700 text-lg dark:text-gray-300 leading-relaxed max-w-3xl">
+        I'm a seasoned technical writer with over 7 years of experience delivering documentation that enhances usability, accelerates adoption, and supports scaling. I’ve collaborated with product, engineering, and design teams to deliver:
       </p>
-      <a href="#work" class="mt-4 inline-block text-blue-700 hover:underline">View my work ↓</a>
+      <ul class="list-disc ml-6 mt-4 text-gray-700 dark:text-gray-300">
+        <li>Comprehensive API references, SDK guides, and developer portals</li>
+        <li>Interactive onboarding content and walkthroughs for SaaS platforms</li>
+        <li>Customer-facing help centers and troubleshooting content</li>
+        <li>Internal knowledge bases and team playbooks</li>
+      </ul>
+      <p class="mt-4 text-gray-700 dark:text-gray-300">My writing blends precision, clarity, and empathy to empower users, reduce support costs, and strengthen product experiences.</p>
     </section>
 
-    <!-- Work Section -->
-    <section id="work" class="mb-16 scroll-mt-20 animate-fade-in">
+    <section id="work" class="mb-20 animate-fade-in">
       <h2 class="text-3xl font-bold mb-6">📝 Featured Work</h2>
-      <div class="flex flex-wrap gap-4 mb-8">
-        <button onclick="filterWork('all')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-sm rounded">All</button>
-        <button onclick="filterWork('api')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-sm rounded">API Docs</button>
-        <button onclick="filterWork('manual')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-sm rounded">User Manuals</button>
-        <button onclick="filterWork('training')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-sm rounded">Training</button>
-        <button onclick="filterWork('marketing')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-sm rounded">Marketing Content</button>
+      <div class="flex flex-wrap gap-3 mb-6">
+        <button onclick="filterWork('all')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-xs rounded">All</button>
+        <button onclick="filterWork('api')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-xs rounded">API Docs</button>
+        <button onclick="filterWork('manual')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-xs rounded">User Manuals</button>
+        <button onclick="filterWork('training')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-xs rounded">Training</button>
+        <button onclick="filterWork('marketing')" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 text-xs rounded">Marketing</button>
       </div>
-
-      <div id="workItems" class="grid gap-6 md:grid-cols-2">
-        <div class="p-6 bg-gray-50 border rounded-xl work-item api hover:shadow-lg transition transform hover:-translate-y-1 dark:bg-gray-700">
-          <img src="https://via.placeholder.com/600x200?text=API+Docs" alt="API Reference" class="mb-3 rounded" loading="lazy">
-          <h3 class="text-xl font-semibold">API Reference for FinTech SaaS Product</h3>
-          <p class="text-gray-700 dark:text-gray-300">Designed and maintained RESTful API documentation using Swagger and Postman. Focused on making it developer-friendly and searchable.</p>
-          <span class="inline-block bg-blue-200 text-blue-800 px-2 py-1 text-xs rounded mt-2">API</span>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 bg-white dark:bg-gray-700 border rounded-xl work-item api hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://via.placeholder.com/600x200?text=API+Docs" alt="API Documentation" class="mb-3 rounded">
+          <h3 class="text-xl font-semibold">Developer Docs for FinTech API</h3>
+          <p class="text-gray-600 dark:text-gray-300">Created end-to-end REST API documentation using Swagger. Reduced onboarding time by 40% and improved developer retention with interactive Postman collections.</p>
+          <span class="inline-block mt-2 text-xs bg-blue-200 text-blue-800 px-2 py-1 rounded">API</span>
         </div>
-        <!-- Add other work-item cards similarly -->
+        <div class="p-6 bg-white dark:bg-gray-700 border rounded-xl work-item manual hover:shadow-xl transition transform hover:-translate-y-1">
+          <img src="https://via.placeholder.com/600x200?text=User+Manual" alt="User Manual" class="mb-3 rounded">
+          <h3 class="text-xl font-semibold">Product Manual for IoT Dashboard</h3>
+          <p class="text-gray-600 dark:text-gray-300">Documented a smart home management UI, helping reduce support tickets by 25% through accessible guides and how-tos.</p>
+          <span class="inline-block mt-2 text-xs bg-blue-200 text-blue-800 px-2 py-1 rounded">Manual</span>
+        </div>
       </div>
-
-      <a href="#skills" class="mt-6 inline-block text-blue-700 hover:underline">See my skillset ↓</a>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="mb-16 scroll-mt-20 animate-slide-up">
+    <section id="skills" class="mb-20 animate-slide-up">
       <h2 class="text-3xl font-bold mb-6">⚙️ Tools & Skills</h2>
-      <ul class="grid grid-cols-2 gap-4 list-disc pl-5 text-gray-800 dark:text-gray-200">
-        <li>Research & Product Documentation</li>
-        <li>Collaboration & Stakeholder Management</li>
-        <li>API & SDK Documentation</li>
-        <li>Information Development & DDLC</li>
-        <li>Training & ADDIE Model</li>
-        <li>Agile & Microservices</li>
-        <li>Markdown / AsciiDoc</li>
-        <li>Swagger / Postman</li>
-        <li>DITA / MadCap Flare</li>
-        <li>Git / GitHub / GitLab</li>
-        <li>CMS / Confluence</li>
-        <li>Content Design / UX Writing</li>
-        <li>MS Style Guide / Google Style Guide</li>
-      </ul>
-      <a href="#contact" class="mt-6 inline-block text-blue-700 hover:underline">Get in touch ↓</a>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-gray-800 dark:text-gray-200">
+        <div class="space-y-2">
+          <h4 class="font-semibold">Documentation Types</h4>
+          <ul class="list-disc ml-4 text-sm">
+            <li>API References</li>
+            <li>UX Copy / Microcopy</li>
+            <li>End-User Docs</li>
+            <li>Knowledge Bases</li>
+          </ul>
+        </div>
+        <div class="space-y-2">
+          <h4 class="font-semibold">Tools & Platforms</h4>
+          <ul class="list-disc ml-4 text-sm">
+            <li>Swagger / Postman</li>
+            <li>Git / GitHub / Bitbucket</li>
+            <li>Markdown / AsciiDoc / HTML</li>
+            <li>Jira / Confluence</li>
+          </ul>
+        </div>
+        <div class="space-y-2">
+          <h4 class="font-semibold">Writing Methodologies</h4>
+          <ul class="list-disc ml-4 text-sm">
+            <li>Agile / Scrum</li>
+            <li>Content Design</li>
+            <li>DDLC / ADDIE</li>
+            <li>Minimalism / DITA</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="mb-16 scroll-mt-20 animate-fade-in">
+    <section id="contact" class="mb-20 animate-fade-in">
       <h2 class="text-3xl font-bold mb-4">📬 Get in Touch</h2>
-      <p class="text-gray-700 mb-4 dark:text-gray-300">I’m open to freelance projects, documentation strategy roles, and collaborative writing. You can reach me at:</p>
-      <ul class="text-gray-800 dark:text-gray-200">
+      <p class="text-gray-700 dark:text-gray-300 mb-4">Open to consulting, remote contracts, and documentation strategy projects:</p>
+      <ul class="text-gray-800 dark:text-gray-200 space-y-1">
         <li>Email: <a href="mailto:mukesh.fces@gmail.com" class="text-blue-700 hover:underline">mukesh.fces@gmail.com</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/mukesh-t-ink-insight" target="_blank" class="text-blue-700 hover:underline">linkedin.com/in/mukesh-t-ink-insight</a></li>
-        <li>GitHub: <a href="https://github.com/twrmukesh13" target="_blank" class="text-blue-700 hover:underline">github.com/twrmukesh13</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/mukesh-t-ink-insight" class="text-blue-700 hover:underline" target="_blank">linkedin.com/in/mukesh-t-ink-insight</a></li>
+        <li>GitHub: <a href="https://github.com/twrmukesh13" class="text-blue-700 hover:underline" target="_blank">github.com/twrmukesh13</a></li>
       </ul>
-      <a href="#" class="mt-6 inline-block text-blue-700 hover:underline">Back to top ↑</a>
     </section>
 
-    <!-- Resume Button -->
-    <div class="text-center mb-12 animate-fade-in">
-      <a href="/"C:\Users\mukes\Downloads\Resume25 - Mukesh Tiwari (2) (1).pdf"" download class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 transition">Download Resume</a>
+    <div class="text-center mb-16 animate-fade-in">
+      <a href="/resume.pdf" download class="bg-blue-700 text-white px-6 py-3 rounded hover:bg-blue-800 transition">Download Resume</a>
     </div>
   </main>
 
@@ -136,20 +149,4 @@
 
   <style>
     .animate-fade-in {
-      animation: fadeIn 1s ease-in-out;
-    }
-    .animate-slide-up {
-      animation: slideUp 1s ease-out;
-    }
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-    @keyframes slideUp {
-      from {transform: translateY(20px); opacity: 0;}
-      to {transform: translateY(0); opacity: 1;}
-    }
-  </style>
-</body>
-</html>
-
+      animation
