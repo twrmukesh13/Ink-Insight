@@ -16,7 +16,10 @@
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
           e.preventDefault();
-          document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
         });
       });
 
@@ -24,14 +27,15 @@
       toggle?.addEventListener("click", () => {
         document.documentElement.classList.toggle("dark");
       });
-    });
 
-    function filterWork(type) {
-      const items = document.querySelectorAll('.work-item');
-      items.forEach(item => {
-        item.style.display = (type === 'all' || item.classList.contains(type)) ? 'block' : 'none';
-      });
-    }
+      const menuToggle = document.getElementById("menuToggle");
+      const nav = document.getElementById("mainNav");
+      if (menuToggle && nav) {
+        menuToggle.addEventListener("click", () => {
+          nav.classList.toggle("hidden");
+        });
+      }
+    });
   </script>
   <style>
     .animate-fade-in {
@@ -52,7 +56,7 @@
   <header class="bg-blue-900 text-white py-6 sticky top-0 z-50 shadow">
     <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
       <a href="#" class="text-2xl font-bold hover:underline">Mukesh Tiwari</a>
-      <nav class="space-x-6 text-sm">
+      <nav id="mainNav" class="space-x-6 text-sm">
         <a href="#about" class="hover:underline">About</a>
         <a href="#work" class="hover:underline">Work</a>
         <a href="#skills" class="hover:underline">Skills</a>
@@ -101,6 +105,26 @@
       </div>
     </section>
 
+    <section id="work" class="mb-20 animate-fade-in">
+      <h2 class="text-3xl font-bold mb-6">💼 Work Samples</h2>
+      <ul class="list-disc ml-6 text-gray-800 dark:text-gray-200">
+        <li><a href="https://github.com/twrmukesh13/Sample-API-Docs" class="text-blue-600 hover:underline" target="_blank">REST API Documentation (Sample)</a></li>
+        <li><a href="https://twrmukesh13.github.io/UX-Onboarding-Flow/" class="text-blue-600 hover:underline" target="_blank">UX Onboarding Flow</a></li>
+        <li><a href="https://github.com/twrmukesh13/Help-Center-Content" class="text-blue-600 hover:underline" target="_blank">Help Center Content Design</a></li>
+      </ul>
+    </section>
+
+    <section id="blog" class="mb-20 animate-fade-in">
+      <h2 class="text-3xl font-bold mb-6">✍️ Blog</h2>
+      <div class="space-y-6">
+        <article class="bg-gray-100 dark:bg-gray-800 p-6 rounded shadow">
+          <h3 class="text-xl font-semibold mb-2">How Great Documentation Elevates Developer Experience</h3>
+          <p class="text-gray-700 dark:text-gray-300">Learn how well-structured technical documentation can reduce churn, accelerate onboarding, and empower developers to build faster...</p>
+          <a href="#" class="text-blue-700 hover:underline">Read More</a>
+        </article>
+      </div>
+    </section>
+
     <section id="testimonials" class="mb-20 animate-fade-in">
       <h2 class="text-3xl font-bold mb-6">💬 Testimonials</h2>
       <div class="grid md:grid-cols-2 gap-6">
@@ -114,8 +138,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Work and Blog sections remain same -->
 
     <section id="contact" class="mb-20 animate-fade-in">
       <h2 class="text-3xl font-bold mb-4">📬 Get in Touch</h2>
