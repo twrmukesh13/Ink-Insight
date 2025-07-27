@@ -3,29 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mukesh Tiwari | Technical Writer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <meta name="description" content="Experienced technical writer creating developer-friendly documentation for SaaS, APIs, and enterprise platforms." />
-  <meta property="og:title" content="Mukesh Tiwari | Technical Writer" />
-  <meta property="og:description" content="Simplifying complex technologies through clear documentation." />
+  <title>Mukesh Tiwari | Technical Writer Portfolio</title>
+  <meta name="description" content="Portfolio of Mukesh Tiwari – a technical writer and information developer simplifying complex technologies with structured, user-friendly documentation." />
+  <meta name="keywords" content="Technical Writer, Information Developer, API Documentation, UX Writing, SaaS Docs, Developer Experience, Documentation Portfolio" />
+  <meta name="author" content="Mukesh Tiwari" />
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Mukesh Tiwari | Technical Writer Portfolio" />
+  <meta property="og:description" content="Simplifying complex technologies through structured documentation." />
   <meta property="og:image" content="/preview.png" />
   <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Animation Styles -->
   <style>
     .animate-fade-in { animation: fadeIn 1s ease-in-out both; }
     .animate-slide-up { animation: slideUp 0.8s ease-out both; }
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
   </style>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mukesh Tiwari",
+    "url": "https://twrmukesh13.github.io/Ink-Insight/",
+    "sameAs": [
+      "https://www.linkedin.com/in/mukeshtiwari13/",
+      "https://github.com/twrmukesh13"
+    ],
+    "jobTitle": "Technical Writer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelance / SaaS Teams"
+    },
+    "email": "mailto:mukesh.fces@gmail.com",
+    "image": "https://twrmukesh13.github.io/Ink-Insight/preview.png",
+    "description": "Experienced technical writer specializing in API documentation, UX writing, and content strategy for B2B/SaaS platforms.",
+    "knowsAbout": [
+      "Technical Writing",
+      "API Documentation",
+      "Information Architecture",
+      "UX Content Design",
+      "Developer Experience",
+      "Docs-as-Code",
+      "Markdown",
+      "Git"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Faculty of Computer and Engineering Sciences"
+    },
+    "contributor": {
+      "@type": "SoftwareApplication",
+      "name": "ChatGPT",
+      "url": "https://openai.com/chatgpt"
+    }
+  }
+  </script>
 </head>
+
 <body class="bg-white text-gray-900 font-sans dark:bg-gray-900 dark:text-gray-100">
+  <!-- Header -->
   <header class="bg-blue-900 text-white py-5 sticky top-0 z-50 shadow">
     <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
       <h1 class="text-xl font-bold">Mukesh Tiwari</h1>
       <nav class="space-x-6 text-sm hidden md:flex">
         <a href="#about" class="hover:underline">About</a>
         <a href="#skills" class="hover:underline">Skills</a>
-        <a href="#work-section" class="hover:underline">Projects</a>
+        <a href="#projects" class="hover:underline">Projects</a>
         <a href="#blog" class="hover:underline">Writing</a>
         <a href="#testimonials" class="hover:underline">Feedback</a>
         <a href="#contact" class="hover:underline">Contact</a>
@@ -33,82 +86,96 @@
     </div>
   </header>
 
+  <!-- Hero Section -->
   <section class="text-center py-20 bg-blue-50 dark:bg-gray-800">
     <h2 class="text-4xl font-extrabold mb-2 animate-fade-in">Mukesh Tiwari</h2>
-    <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Technical Writer | Information Developer | UX Content Strategist</p>
-    <p class="max-w-xl mx-auto text-md text-gray-600 dark:text-gray-400 mb-6">Transforming complexity into clarity. I design and deliver documentation that supports engineers, designers, and end users alike.</p>
-    <a href="#work-section" class="bg-blue-700 text-white px-5 py-2 rounded-full hover:bg-blue-800 transition">View My Work</a>
+    <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">Technical Writer · Information Developer · UX Content Strategist</p>
+    <p class="max-w-xl mx-auto text-md text-gray-600 dark:text-gray-400 mb-6">Simplifying complexity with clarity. I craft user-centered documentation and developer content that accelerates understanding and adoption.</p>
+    <a href="#projects" class="bg-blue-700 text-white px-5 py-2 rounded-full hover:bg-blue-800 transition">Explore My Work</a>
   </section>
 
+  <!-- Main Content -->
   <main class="max-w-6xl mx-auto px-4 mt-16">
+
+    <!-- About -->
     <section id="about" class="mb-16 animate-slide-up">
       <h3 class="text-2xl font-bold mb-4">About Me</h3>
       <p class="text-gray-700 dark:text-gray-300 leading-relaxed max-w-3xl">
-        I’m a senior technical writer and content strategist with 7+ years' experience crafting developer docs, UX microcopy, and customer support content. I specialize in bridging technical expertise with user-centric clarity.
+        I’m a senior technical writer and content designer with 7+ years' experience creating scalable documentation systems. From API docs to onboarding UX copy, I work at the intersection of product, engineering, and design—translating complexity into clarity for diverse audiences.
       </p>
     </section>
 
+    <!-- Skills -->
     <section id="skills" class="mb-16 animate-slide-up">
       <h3 class="text-2xl font-bold mb-4">Skills & Tools</h3>
       <ul class="grid grid-cols-2 md:grid-cols-3 gap-x-6 list-disc ml-6 text-gray-700 dark:text-gray-300">
         <li>API Docs (REST, OpenAPI, Postman)</li>
-        <li>Markdown, Docs-as-Code, Git</li>
-        <li>UX Writing & Content Design</li>
+        <li>Docs-as-Code, Git, GitHub</li>
+        <li>Markdown, HTML, CSS (basic)</li>
+        <li>UX Writing & Microcopy</li>
         <li>Information Architecture (IA)</li>
-        <li>Dev Portals & Help Centers</li>
-        <li>Confluence, Notion, ClickUp</li>
+        <li>User Onboarding Flows</li>
+        <li>Content Design & Style Guides</li>
+        <li>Developer Portals, Help Centers</li>
         <li>Figma, Canva, Miro</li>
-        <li>HTML, CSS (basic)</li>
+        <li>Notion, Confluence, ClickUp</li>
         <li>Jira, Trello, Asana</li>
+        <li>SEO for Docs & Knowledge Bases</li>
       </ul>
     </section>
 
-    <section id="work-section" class="mb-16 animate-slide-up">
+    <!-- Projects -->
+    <section id="projects" class="mb-16 animate-slide-up">
       <h3 class="text-2xl font-bold mb-4">Project Highlights</h3>
       <div class="grid gap-6 md:grid-cols-2">
         <div class="bg-white dark:bg-gray-800 p-5 rounded-lg shadow">
-          <h4 class="font-semibold text-lg mb-1">API Documentation Redesign</h4>
-          <p class="text-sm text-gray-600 dark:text-gray-400">Revamped developer API docs using Swagger UI & Postman, reducing onboarding time by 30%.</p>
+          <h4 class="font-semibold text-lg mb-1">Developer Portal Revamp</h4>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Led content restructuring for an enterprise developer portal, integrating OpenAPI specs and improving navigation UX.</p>
         </div>
         <div class="bg-white dark:bg-gray-800 p-5 rounded-lg shadow">
-          <h4 class="font-semibold text-lg mb-1">SaaS UX Writing & Help Center</h4>
-          <p class="text-sm text-gray-600 dark:text-gray-400">Created onboarding flows and support docs, increasing trial-to-paid conversion by 25%.</p>
+          <h4 class="font-semibold text-lg mb-1">Help Center for SaaS App</h4>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Built a self-serve knowledge base using Docs-as-Code and improved article findability with IA best practices.</p>
         </div>
       </div>
     </section>
 
+    <!-- Blog -->
     <section id="blog" class="mb-16 animate-slide-up">
       <h3 class="text-2xl font-bold mb-4">Writing & Blog</h3>
       <div class="space-y-4">
         <div>
           <h4 class="font-semibold">Designing Docs That Developers Love</h4>
-          <p class="text-gray-600 dark:text-gray-400 text-sm">How to build intuitive, structured documentation for fast-moving teams.</p>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">Best practices for building intuitive, scalable developer documentation.</p>
         </div>
         <div>
           <h4 class="font-semibold">From Onboarding to Retention</h4>
-          <p class="text-gray-600 dark:text-gray-400 text-sm">The role of content in user journey design and customer education.</p>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">How great content improves user journey and product stickiness.</p>
         </div>
       </div>
     </section>
 
+    <!-- Testimonials -->
     <section id="testimonials" class="mb-16 animate-slide-up">
       <h3 class="text-2xl font-bold mb-4">Feedback</h3>
       <div class="bg-gray-100 dark:bg-gray-800 p-5 rounded-lg shadow">
-        <blockquote class="italic text-gray-700 dark:text-gray-300">“Mukesh brings clarity and user empathy to every documentation project. He’s a bridge between engineering and usability.”</blockquote>
-        <p class="mt-2 text-sm font-semibold text-gray-800 dark:text-white">– Product Manager, B2B SaaS</p>
+        <blockquote class="italic text-gray-700 dark:text-gray-300">“Mukesh is a rare blend of technical accuracy and human-centered writing. His docs are consistently praised by developers and support teams alike.”</blockquote>
+        <p class="mt-2 text-sm font-semibold text-gray-800 dark:text-white">– Senior Product Manager, B2B SaaS</p>
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact" class="mb-20 animate-slide-up">
       <h3 class="text-2xl font-bold mb-6">Get in Touch</h3>
       <p class="mb-2 text-gray-700 dark:text-gray-300">Email: <a href="mailto:mukesh.fces@gmail.com" class="text-blue-700 hover:underline">mukesh.fces@gmail.com</a></p>
       <p class="mb-2 text-gray-700 dark:text-gray-300">LinkedIn: <a href="https://www.linkedin.com/in/mukeshtiwari13/" target="_blank" class="text-blue-700 hover:underline">linkedin.com/in/mukeshtiwari13</a></p>
       <p class="mb-2 text-gray-700 dark:text-gray-300">GitHub: <a href="https://github.com/twrmukesh13" target="_blank" class="text-blue-700 hover:underline">github.com/twrmukesh13</a></p>
     </section>
+
   </main>
 
+  <!-- Footer -->
   <footer class="bg-blue-900 text-white text-center py-4">
-    <p class="text-sm">© 2025 Mukesh Tiwari. Built with 💙 for clear communication.</p>
+    <p class="text-sm">© 2025 Mukesh Tiwari. Built with clarity, care, and ChatGPT assistance.</p>
   </footer>
 </body>
 </html>
