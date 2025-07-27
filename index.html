@@ -5,69 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mukesh Tiwari | Technical Writer Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <meta name="description" content="Experienced technical writer crafting API docs, UX writing, and help content for SaaS & B2B platforms. Clear, scalable, user-focused content.">
-  <meta property="og:title" content="Mukesh Tiwari | Technical Writer Portfolio">
-  <meta property="og:description" content="Experienced in technical documentation, UX content, and B2B SaaS writing.">
+  <meta name="description" content="Experienced technical writer crafting clear, scalable documentation for SaaS, APIs, and B2B platforms.">
+  <meta property="og:title" content="Mukesh Tiwari | Technical Writer">
+  <meta property="og:description" content="Simplifying complex technologies through effective content design.">
   <meta property="og:image" content="/preview.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute('href'));
-          if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        });
-      });
-
-      const toggle = document.getElementById("themeToggle");
-      toggle?.addEventListener("click", () => {
-        document.documentElement.classList.toggle("dark");
-      });
-
-      const menuToggle = document.getElementById("menuToggle");
-      const nav = document.getElementById("mainNav");
-      if (menuToggle && nav) {
-        menuToggle.addEventListener("click", () => {
-          nav.classList.toggle("hidden");
-        });
-      }
-    });
-  </script>
   <style>
-    .animate-fade-in {
-      animation: fadeIn 1s ease-in-out both;
-    }
-    .animate-slide-up {
-      animation: slideUp 0.8s ease-out both;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; } to { opacity: 1; }
-    }
-    @keyframes slideUp {
-      from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); }
-    }
+    .animate-fade-in { animation: fadeIn 1s ease-in-out both; }
+    .animate-slide-up { animation: slideUp 0.8s ease-out both; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
   </style>
 </head>
 <body class="bg-white text-gray-900 font-sans dark:bg-gray-900 dark:text-gray-100">
   <header class="bg-blue-900 text-white py-6 sticky top-0 z-50 shadow">
     <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
       <a href="#" class="text-2xl font-bold hover:underline">Mukesh Tiwari</a>
-      <button id="menuToggle" class="text-white md:hidden">☰</button>
-      <nav id="mainNav" class="space-x-6 text-sm hidden md:flex items-center">
+      <nav class="space-x-6 text-sm hidden md:flex items-center">
         <a href="#about" class="hover:underline">About</a>
-        <a href="#work-section" class="hover:underline">Work</a>
         <a href="#skills" class="hover:underline">Skills</a>
+        <a href="#work-section" class="hover:underline">Portfolio</a>
         <a href="#blog" class="hover:underline">Blog</a>
-        <a href="#testimonials" class="hover:underline">Testimonials</a>
         <a href="#contact" class="hover:underline">Contact</a>
-        <a href="mailto:mukesh.fces@gmail.com" class="ml-4 text-xs bg-white text-blue-900 px-3 py-1 rounded hover:bg-gray-100">Email</a>
-        <a href="https://www.linkedin.com/in/mukeshtiwari13/" target="_blank" class="text-xs bg-white text-blue-900 px-3 py-1 rounded hover:bg-gray-100">LinkedIn</a>
-        <a href="https://github.com/twrmukesh13" target="_blank" class="text-xs bg-white text-blue-900 px-3 py-1 rounded hover:bg-gray-100">GitHub</a>
-        <button id="themeToggle" class="ml-4 px-2 py-1 bg-gray-100 text-blue-900 dark:bg-gray-700 dark:text-white rounded text-xs hover:bg-gray-200">Toggle Theme</button>
       </nav>
     </div>
   </header>
@@ -76,73 +36,62 @@
     <h1 class="text-5xl font-extrabold mb-4 animate-fade-in">Mukesh Tiwari</h1>
     <p class="text-xl text-gray-700 dark:text-gray-300 mb-6">Technical Writer • API Docs • UX Content • SaaS & B2B Platforms</p>
     <p class="text-md text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">I simplify complexity through thoughtful content design. From API docs to user flows, I create scalable, impactful, and human-centered documentation.</p>
-    <a href="#work-section" class="bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-800 transition">Explore My Work</a>
+    <a href="#work-section" class="bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-800 transition">View My Work</a>
   </section>
 
   <main class="max-w-6xl mx-auto px-4 mt-16">
     <section id="about" class="mb-20 animate-slide-up">
-      <h2 class="text-3xl font-bold mb-4">👋 About Me</h2>
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
       <p class="text-gray-700 text-lg dark:text-gray-300 leading-relaxed max-w-3xl">
         I’m a seasoned technical writer with 7+ years of experience creating impactful documentation for B2B, SaaS, and developer audiences. I specialize in transforming complex technical systems into clear, user-friendly documentation.
-        My strengths include API docs, UX microcopy, content architecture, onboarding flows, and scalable help centers.
       </p>
       <ul class="list-disc ml-6 mt-4 text-gray-700 dark:text-gray-300">
-        <li>Build full-stack developer portals with Swagger/Postman integrations</li>
-        <li>Design onboarding walkthroughs for SaaS platforms</li>
-        <li>Create product help centers with analytics-driven improvements</li>
-        <li>Maintain internal knowledge bases and runbooks</li>
+        <li>API Documentation (OpenAPI, Postman)</li>
+        <li>UX Writing for onboarding and feature guidance</li>
+        <li>Developer Portals & Help Centers</li>
+        <li>Docs-as-Code workflows with Markdown, Git</li>
       </ul>
     </section>
 
     <section id="skills" class="mb-20 animate-slide-up">
-      <h2 class="text-3xl font-bold mb-4">🛠️ Skills</h2>
+      <h2 class="text-3xl font-bold mb-4">Skills</h2>
       <ul class="list-disc ml-6 text-gray-700 dark:text-gray-300">
-        <li>Technical Writing & Content Design</li>
-        <li>API Documentation (OpenAPI, Postman)</li>
-        <li>UX Writing & Microcopy</li>
-        <li>SaaS Platforms, Dev Tools</li>
-        <li>Markdown, HTML/CSS, Git, Docs-as-Code</li>
-        <li>Tools: Notion, Confluence, Figma, Jira, VS Code</li>
+        <li>Technical Writing & Content Architecture</li>
+        <li>API Docs: REST, OpenAPI, Postman</li>
+        <li>UX Writing, Microcopy, and User Guidance</li>
+        <li>Docs-as-Code, Git, Markdown, VS Code</li>
+        <li>Tools: Notion, Confluence, Figma, Jira</li>
       </ul>
     </section>
 
     <section id="work-section" class="mb-20 animate-slide-up">
-      <h2 class="text-3xl font-bold mb-4">📂 Work Samples</h2>
-      <p class="text-gray-700 dark:text-gray-300 mb-4">(Include your real project links or embed samples)</p>
+      <h2 class="text-3xl font-bold mb-4">Portfolio</h2>
       <div class="grid gap-6 md:grid-cols-2">
         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
           <h3 class="text-xl font-semibold mb-2">API Documentation Project</h3>
-          <p class="text-gray-600 dark:text-gray-400">Created comprehensive REST API docs with Swagger & Postman collection for a B2B platform.</p>
+          <p class="text-gray-600 dark:text-gray-400">Comprehensive REST API docs with Swagger and Postman collections for B2B integrations.</p>
         </div>
         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
-          <h3 class="text-xl font-semibold mb-2">UX Writing: Onboarding Flow</h3>
-          <p class="text-gray-600 dark:text-gray-400">Crafted microcopy for product walkthroughs to guide users through feature discovery.</p>
+          <h3 class="text-xl font-semibold mb-2">UX Copy for SaaS Onboarding</h3>
+          <p class="text-gray-600 dark:text-gray-400">Crafted in-app messages and onboarding flows that boosted product activation by 25%.</p>
         </div>
       </div>
     </section>
 
     <section id="blog" class="mb-20 animate-slide-up">
-      <h2 class="text-3xl font-bold mb-4">📝 Blog</h2>
+      <h2 class="text-3xl font-bold mb-4">Blog</h2>
       <article class="mb-6">
         <h3 class="text-xl font-semibold">Designing Docs That Developers Love</h3>
-        <p class="text-gray-600 dark:text-gray-400">Best practices for writing clean, useful, and scalable documentation for technical teams.</p>
+        <p class="text-gray-600 dark:text-gray-400">Best practices for writing clean, scalable documentation for technical audiences.</p>
       </article>
       <article class="mb-6">
-        <h3 class="text-xl font-semibold">From Onboarding to Retention: The Role of UX Writing</h3>
-        <p class="text-gray-600 dark:text-gray-400">How effective content design impacts user experience and retention metrics.</p>
+        <h3 class="text-xl font-semibold">From Onboarding to Retention</h3>
+        <p class="text-gray-600 dark:text-gray-400">How effective UX writing drives user experience and product retention.</p>
       </article>
-    </section>
-
-    <section id="testimonials" class="mb-20 animate-slide-up">
-      <h2 class="text-3xl font-bold mb-6">💬 Testimonials</h2>
-      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
-        <p class="text-lg italic text-gray-700 dark:text-gray-300">"Mukesh has a rare talent for simplifying complex technical systems. His work helped reduce support tickets by 40%."</p>
-        <p class="mt-4 font-semibold text-blue-700 dark:text-blue-400">– Product Manager, SaaS Company</p>
-      </div>
     </section>
 
     <section id="contact" class="mb-20 animate-slide-up">
-      <h2 class="text-3xl font-bold mb-6">📬 Contact</h2>
+      <h2 class="text-3xl font-bold mb-6">Contact</h2>
       <p class="mb-2 text-gray-700 dark:text-gray-300">Email: <a href="mailto:mukesh.fces@gmail.com" class="text-blue-700 hover:underline">mukesh.fces@gmail.com</a></p>
       <p class="mb-2 text-gray-700 dark:text-gray-300">LinkedIn: <a href="https://www.linkedin.com/in/mukeshtiwari13/" target="_blank" class="text-blue-700 hover:underline">linkedin.com/in/mukeshtiwari13</a></p>
       <p class="mb-2 text-gray-700 dark:text-gray-300">GitHub: <a href="https://github.com/twrmukesh13" target="_blank" class="text-blue-700 hover:underline">github.com/twrmukesh13</a></p>
@@ -154,4 +103,3 @@
   </footer>
 </body>
 </html>
-
